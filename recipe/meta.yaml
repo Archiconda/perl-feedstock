@@ -22,6 +22,11 @@ requirements:
   build:
     - {{ compiler('c') }}   # [unix]
     - make                  # [unix]
+  host:
+    # does this even work?
+    # it can't seem to find `ar`
+    # probably because they hard coded it
+    - binutils
 
 test:
   # downstreams:
