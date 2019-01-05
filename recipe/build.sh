@@ -14,6 +14,7 @@ _config_args+=(-Ddefault_inc_excludes_dot=n)
 if [[ -n "${GCC:-${CC}}" ]]; then
   _config_args+=("-Dcc=${GCC:-${CC}}")
 fi
+_config_args+=("-Dar=${AR}")
 if [[ ${HOST} =~ .*linux.* ]]; then
   _config_args+=(-Dlddlflags="-shared ${LDFLAGS}")
 # elif [[ ${HOST} =~ .*darwin.* ]]; then
