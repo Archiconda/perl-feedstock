@@ -37,7 +37,7 @@ if [[ ! ${c_compiler} =~ .*toolchain.* ]]; then
 fi
 
 ./Configure -de "${_config_args[@]}"
-make
+make -j${CPU_COUNT}
 
 # change permissions again after building
 chmod -R o-w "${SRC_DIR}"
