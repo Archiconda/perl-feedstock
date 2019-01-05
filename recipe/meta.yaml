@@ -27,7 +27,7 @@ requirements:
     # it can't seem to find `ar`
     # probably because they hard coded it
     - binutils_linux-aarch64
-    - binutils_impl_linux
+    - binutils_impl_linux-aarch64
 
 test:
   # downstreams:
